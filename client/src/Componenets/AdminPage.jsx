@@ -23,7 +23,7 @@ export default function AdminPage() {
   };
 
   return (
-    <div className='mt-3 w-4/5 m-auto max-sm:w-full max-sm:mx-2'>
+    <div className='mt-3 w-4/5 m-auto max-sm:w-full max-sm:mx-2 overflow-hidden'>
       {isAuthenticated ? (
         <div>
           <header  className='flex w-full justify-between items-center'>
@@ -35,7 +35,7 @@ export default function AdminPage() {
           <CRUDpage/>
         </div>
       ) : (
-        <div className='bg-gray-50 p-5 rounded-lg w-3/5 m-auto mt-20'>
+        <div className='bg-gray-50 p-5 rounded-lg w-3/5 max-sm:w-4/5 m-auto mt-20'>
         <h1  className='text-4xl text-bold  text-center'><CiLock /></h1>
           <h2 className='text-2xl my-4'>Enter Password to Access</h2>
         <small className='my-3 text-blue-400'>is this angel? prove it !!</small>
