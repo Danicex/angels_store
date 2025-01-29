@@ -1,5 +1,6 @@
 import React from 'react'
 import Footer from './Footer'
+import { Link } from 'react-router-dom'
 
 export default function LandingPage() {
     return (
@@ -27,7 +28,7 @@ export default function LandingPage() {
             </a>
           </div>
           <div className="flex items-center space-x-4">
-            <button className="p-2">🛒</button>
+            <button className="p-2"><Link to={'/store'}>🛒</Link></button>
           </div>
         </nav>
   
@@ -39,7 +40,7 @@ export default function LandingPage() {
               Lorem ipsum is simply dummy text & commonly used in the graphic, print & publishing industries for
               previewing layouts.
             </p>
-            <button className="px-8 py-3 bg-black text-white">SHOP NOW</button>
+            <button className="px-8 py-3 bg-black text-white"><Link to={'/store'}>SHOP NOW</Link></button>
           </div>
           <div className="hidden md:block w-1/2">
             <img

@@ -6,3 +6,14 @@
 .logo-txt{
     font-family: 'Dancing Script', cursive;
 }
+.banner-image{
+    height: 50dvh;
+    background-color: rgb(59, 13, 102);
+    margin: auto;
+    border-radius: 20px;
+    color: #fff;
+  }
+.product-container{
+    max-height: 100dvh;
+    overflow-y: scroll;
+}

@@ -6,8 +6,7 @@ import './Componenets/Allstyles.css'
 import LandingPage from './Componenets/LandingPage'
 import AdminPage from './Componenets/AdminPage'
 import Contact from './Componenets/Contact'
-import HomePage from './Componenets/HomePage'
-
+import Store from './Componenets/Store'
 function App() {
 
   return (
@@ -16,7 +15,7 @@ function App() {
         <Route path="/" element={ <LandingPage/> } />
         <Route path="admin" element={ <AdminPage/> } />
         <Route path="contact" element={ <Contact/> } />
-        <Route path="store" element={ <HomePage/> } />
+        <Route path="store" element={ <Store/> } />
     </Routes>
   )
 }
